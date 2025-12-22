@@ -11,9 +11,17 @@
        <p>นาย อนณ สายระดา (เล่)</p>
        <p>Anon Sairada (le)</p>
     <hr>
- <hr>
+ 
        <p>นาย ภคนันท์ ผุยคำสิงห์ (เเฟนต้า)</p>
-       <p>Phaknunt Puykamsing (le)</p>
+       <p>Phaknunt Puykamsing (fanta)</p>
+    <hr>
+
+       <p>นาย จิรภัทร คนเพียร (แมทธิว)</p>
+       <p>Chiraphat Konphiar (matteew)</p>
+    <hr>
+
+       <p>นาย อภิวัฒน์ สุภาว์ (กล้า)</p>
+       <p>Aphiwat supa (kla)</p>
     <hr>
 </body>
 </html>
