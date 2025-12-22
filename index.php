@@ -12,7 +12,7 @@
        <p>Anon Sairada (le)</p>
     <hr>
        <p>นาย ภคนันท์ ผุยคำสิงห์ (เเฟนต้า)</p>
-       <p>Phaknunt Puykamsing (le)</p>
+       <p>Phaknunt Puykamsng (le)</p>
     <hr>
     
 
