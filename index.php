@@ -11,10 +11,9 @@
        <p>นาย อนณ สายระดา (เล่)</p>
        <p>Anon Sairada (le)</p>
     <hr>
+ <hr>
        <p>นาย ภคนันท์ ผุยคำสิงห์ (เเฟนต้า)</p>
-       <p>Phaknunt Puykamsng (le)</p>
+       <p>Phaknunt Puykamsing (le)</p>
     <hr>
-    
-
 </body>
 </html>
