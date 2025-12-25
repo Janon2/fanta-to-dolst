@@ -4,9 +4,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_errno);
 }
 if (isset($_POST['addtask'])){
-    $task = $_POST['task'];
+   $task = trim($_POST['task']);
     $conn -> query("INSERT INTO tasks (task) VALUES ('$task')");
-    header("Location: index.php");  
+    header("Location: index.php");
+exit();
 }
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
@@ -16,7 +17,7 @@ if (isset($_GET['delete'])) {
 
 if (isset($_GET['complete'])) {
     $id = $_GET['complete'];
-    $conn->query("UPDATE tasks SET status = 'complete' WHERE id=id");
+    $conn->query("UPDATE tasks SET status = 'completed' WHERE id=$id");
     header("Location: index.php");
 }
 $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
@@ -28,14 +29,15 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fanta-to-dolst</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
-        <h1>Fanta To-Do List</h1>
+        <h1>To-Do List</h1>
 
         <form action="index.php" method="post">
             <input type="text" name="task" placeholder="Enter new task" required>
-            <button type="submit" name="addtask">Add</button>
+            <button type="submit" name="addtask">Add new Todo</button>
         </form>
 
         <ul>
@@ -50,6 +52,11 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
                 </li>
             <?php endwhile; ?>
         </ul>
+         <ul class="actions">
+         <p style="text-align:center;margin-top:10px;">
+        <a href="dashboard.php">leave</a>
+         </ul>
+    </p>
     </div>
 </body>
 </html>
